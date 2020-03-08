@@ -6,9 +6,14 @@
   <div class="col s12 center m6 l3">
     <div class="card z-depth-0">
       <video width="300" height="250" controls src="{{post.video.url}}"></video>
-      <h6 class="left-align">{{post.title}}</h6>
-      <p class="left-align">{{post.description}}</p>
-      <p class="left-align">{{post.date}}</p>
+      <h6 class="center-align ">{{post.title}}</h6>
+      <details>
+        <summary class="blue-text">description </summary>
+        <p class="center-align">{{post.description}}</p>
+      </details>
+      
+      <p class="center-align">{{post.date}}</p>
+      <a class="waves-effect btn" href="{% url 'details' post.id %}"> more details</a>
     </div>
   </div>
   {% endfor %}

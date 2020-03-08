@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container center">
+    <video width="500" height="500" controls src="{{object.video.url}}"></video>
+    <h4>{{object.title}}</h4>
+    <a href="">{{object.username}}</a>
+    <h6>{{object.description}}</h6>
+
+</div>
+
+
+{% endblock  %}
